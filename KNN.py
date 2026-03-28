@@ -10,5 +10,5 @@ X_test=pd.read_csv("test.csv").values
 ############# MODEL INSTANTEIATION ######################
 KNN=KNeighborsClassifier(2)
 KNN.fit(X_train,Y_train)
-prediction=KNN.predict(X_test)
-print(prediction)
+prediction=pd.DataFrame(KNN.predict(X_test))
+
