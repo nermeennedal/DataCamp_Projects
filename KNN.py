@@ -11,4 +11,4 @@ X_test=pd.read_csv("test.csv").values
 KNN=KNeighborsClassifier(2)
 KNN.fit(X_train,Y_train)
 prediction=pd.DataFrame(KNN.predict(X_test))
-
+print(prediction)
